@@ -10,7 +10,8 @@ class Customer(models.Model):
         blank=True,
         null=True,
         validators=[RegexValidator(
-            regex=r'^\+?1?\d{9,15}$'
+            regex=r'^\+?1?\d{9,15}$|\d{3}-\d{3}-\d{4}$',
+            message="Phone number must be in the format +1234567890 or 123-456-7890"
             )]
     )
 
