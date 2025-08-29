@@ -6,7 +6,7 @@ from django.core.exceptions import ValidationError
 from django.db import IntegrityError
 import re
 from .models import Customer, Product, Order
-from crm.models import Product
+from crm.models import Producttouc
 from .filters import CustomerFilter, ProductFilter, OrderFilter
 
 

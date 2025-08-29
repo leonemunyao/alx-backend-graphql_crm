@@ -26,6 +26,9 @@ distro==1.9.0
 distro-info==1.7+build1
 Django==4.2.11
 django-crontab
+celery
+django-celery-beat
+redis
 frozenlist==1.4.0
 fuse-python==1.0.7
 gyp==0.1
