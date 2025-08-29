@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_crontab',
     'django_filters',
     'graphene_django',
     'crm',
@@ -137,4 +138,7 @@ GRAPHENE = {
     "SCHEMA": "alx_backend_graphql_crm.schema.schema"
 }
 
+CRONJOBS = [
+    ('*/5 * * * *', 'crm.cron.log_crm_heartbeat'),
+]
 
